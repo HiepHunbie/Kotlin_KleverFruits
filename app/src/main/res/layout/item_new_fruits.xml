@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/_5sdp"
+                android:background="@color/white"
+                android:id="@+id/layout_item">
+
+    <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+                  android:orientation="horizontal"
+                  android:id="@+id/layout_top">
+
+        <ImageView android:layout_width="@dimen/_20sdp" android:layout_height="@dimen/_20sdp"
+                   app:srcCompat = "@drawable/ic_time"
+                   android:padding="@dimen/_2sdp"
+        android:tint="@color/text_black_333"/>
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                  android:layout_gravity="center_vertical"
+                  android:id="@+id/txt_time"
+                  android:text="aaaa"
+                  android:textColor="@color/text_black_333"
+                  android:textSize="@dimen/_11sdp"
+                  android:fontFamily="@font/roboto_regular"
+                  android:layout_marginLeft="@dimen/_3sdp"/>
+    </LinearLayout>
+
+    <ImageView android:layout_width="fill_parent" android:layout_height="wrap_content"
+               android:src="@drawable/ic_product"
+               android:padding="@dimen/_10sdp"
+               android:adjustViewBounds="true"
+               android:scaleType="fitCenter"
+               android:id="@+id/img_product"
+               android:layout_below="@+id/layout_top"
+    />
+
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                  android:orientation="vertical"
+                  android:id="@+id/layout_bottom"
+                  android:gravity="center"
+                  android:layout_below="@+id/img_product">
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                  android:layout_gravity="center_vertical"
+                  android:id="@+id/txt_name"
+                  android:text="AAAAA"
+                  android:textColor="@color/text_black_333"
+                  android:textSize="@dimen/_12sdp"
+                  android:fontFamily="@font/roboto_regular"
+                  android:layout_marginLeft="@dimen/_3sdp"
+                  android:gravity="center"/>
+
+        <LinearLayout android:layout_width="match_parent" android:layout_height="match_parent"
+                      android:orientation="horizontal">
+            <TextView android:layout_width="0dp"
+                      android:layout_weight="1"
+                      android:layout_height="wrap_content"
+                      android:layout_gravity="center_vertical"
+                      android:id="@+id/txt_sale_cost"
+                      android:text="aaaa"
+                      android:textColor="@color/background_main"
+                      android:textSize="@dimen/_10sdp"
+                      android:fontFamily="@font/roboto_bold"
+                      android:gravity="right"
+                      android:paddingRight="@dimen/_2sdp"/>
+            <TextView android:layout_width="0dp"
+                      android:layout_weight="1"
+                      android:layout_height="wrap_content"
+                      android:layout_gravity="center_vertical"
+                      android:id="@+id/txt_real_cost"
+                      android:text="aaaa"
+                      android:textColor="@color/text_black_333"
+                      android:textSize="@dimen/_9sdp"
+                      android:fontFamily="@font/roboto_regular"
+                      android:paddingLeft="@dimen/_2sdp"/>
+        </LinearLayout>
+    </LinearLayout>
+    <ProgressBar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/_30sdp"
+            android:minHeight="50dp"
+            android:minWidth="50dp"
+            android:id="@+id/prg_new_fruits"
+            android:visibility="gone"
+            android:layout_centerInParent="true"
+            android:clickable="true"/>
+</RelativeLayout>

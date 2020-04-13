@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/trans_black">
+
+
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="@dimen/_10sdp"
+    android:background="@color/white"
+    android:layout_alignParentBottom="true">
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                  android:text="@string/convert_this_bonus"
+                  android:textColor="@color/text_black_333"
+                  android:fontFamily="@font/roboto_bold"
+                  android:textSize="@dimen/_13sdp"/>
+
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                  android:text="@string/convert_this_bonus"
+                  android:textColor="@color/text_gray_666"
+                  android:fontFamily="@font/roboto_regular"
+                  android:textSize="@dimen/_12sdp"
+        android:id="@+id/txt_convert_with"
+        android:layout_marginTop="@dimen/_3sdp"/>
+
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/_5sdp">
+            <TextView android:layout_width="0dp"
+                      android:layout_weight="1"
+                      android:layout_height="@dimen/_40sdp"
+                      android:background="@drawable/custom_dialog_white_black"
+                      android:padding="@dimen/_10sdp"
+                      android:text="@string/cancel_big"
+                      android:gravity="center"
+                      android:textColor="@color/text_gray_666"
+                      android:textSize="@dimen/_13sdp"
+                      android:fontFamily="@font/roboto_regular"
+                      android:layout_marginRight="@dimen/_5sdp"
+                      android:id="@+id/txt_cancel"/>
+            <TextView android:layout_width="0dp"
+                      android:layout_weight="1"
+                      android:layout_height="@dimen/_40sdp"
+                      android:background="@drawable/custom_dialog_violet"
+                      android:padding="@dimen/_10sdp"
+                      android:text="@string/confirm_big"
+                      android:gravity="center"
+                      android:textColor="@color/white"
+                      android:textSize="@dimen/_13sdp"
+                      android:fontFamily="@font/roboto_regular"
+                      android:layout_marginLeft="@dimen/_5sdp"
+                      android:id="@+id/txt_confirm"/>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/white">
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView android:layout_width="fill_parent"
+                   android:layout_height="wrap_content"
+                   android:adjustViewBounds="true"
+                   android:scaleType="fitCenter"
+                   app:srcCompat="@drawable/ic_banner_product"
+                   android:id="@+id/img_top"/>
+        <ImageView android:layout_width="@dimen/_50sdp" android:layout_height="@dimen/_50sdp"
+                   android:id="@+id/img_back"
+                   app:srcCompat = "@drawable/ic_back_border_black"
+                   android:padding="@dimen/_12sdp"/>
+    </RelativeLayout>
+
+    <WebView android:layout_width="match_parent" android:layout_height="match_parent"
+             android:id="@+id/webview_detail_beauty_of_life"
+             tools:ignore="MissingConstraints"
+             tools:layout_editor_absoluteX="8dp"
+             tools:layout_editor_absoluteY="8dp"
+             android:padding="@dimen/_10sdp"
+             android:background="@color/white"></WebView>
+</LinearLayout>

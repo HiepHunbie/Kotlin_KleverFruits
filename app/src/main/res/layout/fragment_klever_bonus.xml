@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/background_item">
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                  android:background="@color/white"
+                  android:padding="@dimen/_15sdp"
+                  android:orientation="vertical"
+                  android:id="@+id/layout_title_klever_bonus">
+
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+        >
+            <ImageView android:layout_width="@dimen/_20sdp" android:layout_height="@dimen/_20sdp"
+                       android:id="@+id/img_back_klever_bonus"
+                       app:srcCompat="@drawable/ic_back"
+                       android:padding="@dimen/_3sdp"
+                       android:layout_centerVertical="true"
+            android:tint="@color/text_black_333"/>
+
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                      android:gravity="center"
+                      android:text="@string/klever_bonus"
+                      android:textColor="@color/text_black_333"
+                      android:fontFamily="@font/roboto_regular"
+                      android:textSize="@dimen/_16sdp"/>
+        </RelativeLayout>
+
+    </LinearLayout>
+    <LinearLayout android:layout_width="match_parent" android:layout_height="@dimen/_45sdp"
+                  android:orientation="horizontal">
+        <RelativeLayout android:layout_width="0dp"
+                        android:layout_weight="1" android:layout_height="match_parent"
+                        android:id="@+id/layout_from_partner"
+                        android:background="@drawable/custom_border_bottom_violet"
+                        android:paddingTop="@dimen/_10sdp"
+                        android:paddingBottom="@dimen/_10sdp"
+                        android:paddingLeft="@dimen/_15sdp"
+                        android:paddingRight="@dimen/_15sdp">
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                      android:gravity="center"
+                      android:text="@string/bonus_from_partner"
+                      android:textColor="@color/text_black_333"
+                      android:fontFamily="@font/roboto_regular"
+                      android:textSize="@dimen/_12sdp"
+                      android:layout_centerInParent="true"
+                      android:id="@+id/txt_from_partner"
+            />
+        </RelativeLayout>
+        <RelativeLayout android:layout_width="0dp"
+                        android:layout_weight="1" android:layout_height="match_parent"
+                        android:id="@+id/layout_from_klever"
+                        android:background="@drawable/custom_border_bottom_white"
+                        android:paddingTop="@dimen/_10sdp"
+                        android:paddingBottom="@dimen/_10sdp"
+                        android:paddingLeft="@dimen/_15sdp"
+                        android:paddingRight="@dimen/_15sdp">
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                      android:gravity="center"
+                      android:text="@string/bonus_from_klever"
+                      android:textColor="@color/text_black_333"
+                      android:fontFamily="@font/roboto_regular"
+                      android:textSize="@dimen/_12sdp"
+                      android:layout_centerInParent="true"
+                      android:id="@+id/txt_from_klever"
+            />
+        </RelativeLayout>
+    </LinearLayout>
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+    >
+    <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/ryv_klever_bonus"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/layout_bottom"
+    android:padding="@dimen/_10sdp"/>
+
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="@dimen/_40sdp"
+        android:background="@color/white"
+        android:padding="@dimen/_10sdp"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/layout_bottom">
+            <ImageView android:layout_width="wrap_content" android:layout_height="fill_parent"
+            android:adjustViewBounds="true"
+            android:id="@+id/img_level"
+                       android:src="@drawable/ic_level_account"
+            />
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                      android:gravity="center"
+                      android:text="@string/bonus_from_klever"
+                      android:textColor="@color/text_black_333"
+                      android:fontFamily="@font/roboto_regular"
+                      android:textSize="@dimen/_11sdp"
+                      android:layout_centerVertical="true"
+                      android:layout_toRightOf="@+id/img_level"
+                      android:id="@+id/txt_level_account"
+                      android:paddingLeft="@dimen/_5sdp"
+            />
+
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                      android:gravity="center"
+                      android:text="1,342 điểm có sắn"
+                      android:textColor="@color/text_black_333"
+                      android:fontFamily="@font/roboto_regular"
+                      android:textSize="@dimen/_9sdp"
+                      android:layout_centerVertical="true"
+                      android:layout_alignParentRight="true"
+                      android:id="@+id/txt_number_point"
+                      android:paddingLeft="@dimen/_5sdp"
+            />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</LinearLayout>

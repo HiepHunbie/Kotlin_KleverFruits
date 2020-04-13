@@ -1,0 +1,356 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/background_login_white">
+
+    <ImageView android:layout_width="fill_parent"
+               android:layout_height="wrap_content"
+               android:adjustViewBounds="true"
+               android:scaleType="fitCenter"
+               android:src="@drawable/ic_back_top_info_account"/>
+
+    <ScrollView android:layout_width="match_parent" android:layout_height="match_parent"
+    >
+        <LinearLayout android:layout_width="match_parent" android:layout_height="match_parent"
+        android:orientation="vertical">
+
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                      android:text="@string/info_account"
+                      android:textColor="@color/white"
+                      android:fontFamily="@font/roboto_regular"
+                      android:textSize="@dimen/_16sdp"
+                      android:layout_marginTop="@dimen/_30sdp"
+                      android:id="@+id/txt_title_signup"
+            android:layout_gravity="center_horizontal"
+            />
+
+            <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_30sdp">
+
+                <de.hdodenhof.circleimageview.CircleImageView android:layout_width="@dimen/_100sdp" android:layout_height="@dimen/_100sdp"
+                                                              android:src="@color/white"
+                                                              android:layout_centerHorizontal="true"
+                                                              android:layout_centerVertical="true"/>
+                <de.hdodenhof.circleimageview.CircleImageView android:layout_width="@dimen/_96sdp" android:layout_height="@dimen/_96sdp"
+                                                              android:src="@drawable/ic_back_top_login"
+                                                              android:layout_centerHorizontal="true"
+                                                              android:layout_centerVertical="true"
+                android:id="@+id/img_avatar"/>
+
+                <ImageView android:layout_width="@dimen/_25sdp" android:layout_height="@dimen/_25sdp"
+                android:id="@+id/img_change_avatar"
+                app:srcCompat = "@drawable/ic_editphoto"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/_90sdp"/>
+            </RelativeLayout>
+
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                      android:text="ABC"
+                      android:textColor="@color/text_black"
+                      android:fontFamily="@font/roboto_regular"
+                      android:textSize="@dimen/_13sdp"
+                      android:layout_marginTop="@dimen/_10sdp"
+                      android:id="@+id/txt_account"
+                      android:layout_gravity="center_horizontal"
+            />
+
+            <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/_5sdp">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                          android:text="ABC"
+                          android:textColor="@color/text_black"
+                          android:fontFamily="@font/roboto_regular"
+                          android:textSize="@dimen/_11sdp"
+                          android:id="@+id/txt_point"
+                          android:layout_gravity="center_vertical"
+                />
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                          android:text="|"
+                          android:textColor="@color/text_black"
+                          android:fontFamily="@font/roboto_regular"
+                          android:textSize="@dimen/_11sdp"
+                          android:layout_gravity="center_vertical"
+                          android:layout_marginLeft="@dimen/_2sdp"
+                          android:layout_marginRight="@dimen/_2sdp"
+                          android:gravity="center_vertical"
+                />
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                          android:text="ABC"
+                          android:textColor="@color/text_black"
+                          android:fontFamily="@font/roboto_regular"
+                          android:textSize="@dimen/_11sdp"
+                          android:id="@+id/txt_rank"
+                          android:layout_gravity="center_vertical"
+                />
+                <ImageView android:layout_width="@dimen/_10sdp" android:layout_height="@dimen/_10sdp"
+                app:srcCompat = "@drawable/ic_next"
+                android:layout_gravity="center_vertical"
+                android:tint="@color/text_black"/>
+            </LinearLayout>
+
+            <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:padding="@dimen/_10sdp"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:layout_marginBottom="@dimen/_5sdp"
+            android:background="@drawable/custom_dialog_white"
+            android:layout_marginTop="@dimen/_15sdp">
+                <ImageView android:layout_width="@dimen/_20sdp" android:layout_height="@dimen/_20sdp"
+                app:srcCompat = "@drawable/ic_edit"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"/>
+
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginRight="@dimen/_25sdp"
+                              android:layout_centerVertical="true"
+                >
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="@string/fullname"
+                    android:textSize="@dimen/_11sdp"
+                    android:fontFamily="@font/roboto_bold"
+                    android:textColor="@color/button_main_hide"/>
+
+                    <EditText android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:textSize="@dimen/_11sdp"
+                    android:textColor="@color/text_black_333"
+                    android:text=""
+                    android:id="@+id/edt_fullname"
+                    android:fontFamily="@font/roboto_regular"
+                              android:layout_marginTop="@dimen/_3sdp"/>
+                </LinearLayout>
+            </RelativeLayout>
+
+            <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                            android:padding="@dimen/_10sdp"
+                            android:layout_marginLeft="@dimen/_10sdp"
+                            android:layout_marginRight="@dimen/_10sdp"
+                            android:layout_marginBottom="@dimen/_5sdp"
+                            android:background="@drawable/custom_dialog_white">
+                <ImageView android:layout_width="@dimen/_20sdp" android:layout_height="@dimen/_20sdp"
+                           app:srcCompat = "@drawable/ic_edit"
+                           android:layout_alignParentRight="true"
+                           android:layout_centerVertical="true"/>
+
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                              android:orientation="vertical"
+                              android:layout_marginRight="@dimen/_25sdp"
+                              android:layout_centerVertical="true"
+                >
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                              android:text="@string/address"
+                              android:textSize="@dimen/_11sdp"
+                              android:fontFamily="@font/roboto_bold"
+                              android:textColor="@color/button_main_hide"/>
+
+                    <EditText android:layout_width="match_parent" android:layout_height="wrap_content"
+                              android:background="@color/white"
+                              android:textSize="@dimen/_11sdp"
+                              android:textColor="@color/text_black_333"
+                              android:text=""
+                              android:id="@+id/edt_address"
+                              android:fontFamily="@font/roboto_regular"
+                              android:layout_marginTop="@dimen/_3sdp"/>
+                </LinearLayout>
+            </RelativeLayout>
+
+            <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                            android:padding="@dimen/_10sdp"
+                            android:layout_marginLeft="@dimen/_10sdp"
+                            android:layout_marginRight="@dimen/_10sdp"
+                            android:layout_marginBottom="@dimen/_5sdp"
+                            android:background="@drawable/custom_dialog_white">
+                <ImageView android:layout_width="@dimen/_20sdp" android:layout_height="@dimen/_20sdp"
+                           app:srcCompat = "@drawable/ic_edit"
+                           android:layout_alignParentRight="true"
+                           android:layout_centerVertical="true"/>
+
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                              android:orientation="vertical"
+                              android:layout_marginRight="@dimen/_25sdp"
+                              android:layout_centerVertical="true"
+                >
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                              android:text="@string/email"
+                              android:textSize="@dimen/_11sdp"
+                              android:fontFamily="@font/roboto_bold"
+                              android:textColor="@color/button_main_hide"/>
+
+                    <EditText android:layout_width="match_parent" android:layout_height="wrap_content"
+                              android:background="@color/white"
+                              android:textSize="@dimen/_11sdp"
+                              android:textColor="@color/text_black_333"
+                              android:text=""
+                              android:id="@+id/edt_email"
+                              android:fontFamily="@font/roboto_regular"
+                              android:layout_marginTop="@dimen/_3sdp"/>
+                </LinearLayout>
+            </RelativeLayout>
+
+            <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                            android:padding="@dimen/_10sdp"
+                            android:layout_marginLeft="@dimen/_10sdp"
+                            android:layout_marginRight="@dimen/_10sdp"
+                            android:layout_marginBottom="@dimen/_5sdp"
+                            android:background="@drawable/custom_dialog_white">
+                <ImageView android:layout_width="@dimen/_20sdp" android:layout_height="@dimen/_20sdp"
+                           app:srcCompat = "@drawable/ic_edit"
+                           android:layout_alignParentRight="true"
+                           android:layout_centerVertical="true"/>
+
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                              android:orientation="vertical"
+                              android:layout_marginRight="@dimen/_25sdp"
+                              android:layout_centerVertical="true"
+                >
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                              android:text="@string/phone"
+                              android:textSize="@dimen/_11sdp"
+                              android:fontFamily="@font/roboto_bold"
+                              android:textColor="@color/button_main_hide"/>
+
+                    <!--<EditText android:layout_width="match_parent" android:layout_height="wrap_content"-->
+                              <!--android:background="@color/white"-->
+                              <!--android:textSize="@dimen/_11sdp"-->
+                              <!--android:textColor="@color/text_black_333"-->
+                              <!--android:text=""-->
+                              <!--android:id="@+id/edt_phone"-->
+                              <!--android:fontFamily="@font/roboto_regular"-->
+                              <!--android:layout_marginTop="@dimen/_3sdp"/>-->
+                    <com.example.kleverfruits.utils.IntlphoneInputJava.IntlPhoneInput
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/roboto_regular"
+                            android:layout_marginTop="@dimen/_3sdp"
+                            app:textSize="@dimen/_11sdp"
+                            app:textColor="@color/text_black_333"
+                            android:id="@+id/edt_account_mobile_phone"
+                            android:textSize="@dimen/_11sdp"
+                            android:textColor="@color/edittext_login_color"
+                            android:background="@color/white"
+                            android:paddingLeft="@dimen/_5sdp"
+                            android:paddingRight="@dimen/_5sdp"
+                            app:flagPaddingBottom="4dp"
+                            app:flagPaddingEnd="4dp"
+                            app:flagPaddingStart="4dp"
+                            app:flagPaddingTop="4dp"
+                            android:defaultFocusHighlightEnabled="true"
+                            android:padding="@dimen/_2sdp"
+
+                    />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                            android:padding="@dimen/_10sdp"
+                            android:layout_marginLeft="@dimen/_10sdp"
+                            android:layout_marginRight="@dimen/_10sdp"
+                            android:layout_marginBottom="@dimen/_5sdp"
+                            android:background="@drawable/custom_dialog_white">
+                <ImageView android:layout_width="@dimen/_20sdp" android:layout_height="@dimen/_20sdp"
+                           app:srcCompat = "@drawable/ic_birthday"
+                           android:layout_alignParentRight="true"
+                           android:layout_centerVertical="true"
+                android:id="@+id/img_birthday"/>
+
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                              android:orientation="vertical"
+                              android:layout_marginRight="@dimen/_25sdp"
+                              android:layout_centerVertical="true"
+                >
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                              android:text="@string/birthday"
+                              android:textSize="@dimen/_11sdp"
+                              android:fontFamily="@font/roboto_bold"
+                              android:textColor="@color/button_main_hide"/>
+
+                    <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                              android:background="@color/white"
+                              android:textSize="@dimen/_11sdp"
+                              android:textColor="@color/text_black_333"
+                              android:text=""
+                              android:id="@+id/edt_birthday"
+                              android:fontFamily="@font/roboto_regular"
+                              android:layout_marginTop="@dimen/_3sdp"/>
+                </LinearLayout>
+            </RelativeLayout>
+
+            <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                            android:padding="@dimen/_10sdp"
+                            android:layout_marginLeft="@dimen/_10sdp"
+                            android:layout_marginRight="@dimen/_10sdp"
+                            android:layout_marginBottom="@dimen/_5sdp"
+                            android:background="@drawable/custom_dialog_white">
+                <ImageView android:layout_width="@dimen/_20sdp" android:layout_height="@dimen/_20sdp"
+                           app:srcCompat = "@drawable/ic_edit"
+                           android:layout_alignParentRight="true"
+                           android:layout_centerVertical="true"/>
+
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                              android:orientation="vertical"
+                              android:layout_marginRight="@dimen/_25sdp"
+                              android:layout_centerVertical="true"
+                >
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                              android:text="@string/sex"
+                              android:textSize="@dimen/_11sdp"
+                              android:fontFamily="@font/roboto_bold"
+                              android:textColor="@color/button_main_hide"/>
+
+                    <EditText android:layout_width="match_parent" android:layout_height="wrap_content"
+                              android:background="@color/white"
+                              android:textSize="@dimen/_11sdp"
+                              android:textColor="@color/text_black_333"
+                              android:text=""
+                              android:id="@+id/edt_sex"
+                              android:fontFamily="@font/roboto_regular"
+                              android:layout_marginTop="@dimen/_3sdp"/>
+                </LinearLayout>
+            </RelativeLayout>
+
+            <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                            android:padding="@dimen/_10sdp"
+                            android:layout_marginLeft="@dimen/_10sdp"
+                            android:layout_marginRight="@dimen/_10sdp"
+                            android:layout_marginBottom="@dimen/_5sdp"
+                            android:background="@drawable/custom_dialog_white">
+
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                              android:orientation="vertical"
+                              android:layout_marginRight="@dimen/_25sdp"
+                              android:layout_centerVertical="true"
+                >
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                              android:text="@string/password"
+                              android:textSize="@dimen/_11sdp"
+                              android:fontFamily="@font/roboto_bold"
+                              android:textColor="@color/button_main_hide"/>
+
+                    <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                              android:background="@color/white"
+                              android:textSize="@dimen/_10sdp"
+                              android:textColor="@color/background_main"
+                              android:text="@string/change_password"
+                              android:id="@+id/edt_change_password"
+                              android:fontFamily="@font/roboto_regular"
+                    android:layout_marginTop="@dimen/_3sdp"/>
+                </LinearLayout>
+            </RelativeLayout>
+
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:text="@string/logout_big"
+            android:textColor="@color/background_main"
+            android:textSize="@dimen/_14sdp"
+            android:id="@+id/txt_logout"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="@dimen/_20sdp"/>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

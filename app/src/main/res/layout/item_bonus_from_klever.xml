@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_5sdp"
+                android:id="@+id/layout_view"
+>
+
+    <ImageView android:layout_width="fill_parent" android:layout_height="wrap_content"
+               android:src="@drawable/ic_back_item_bonus_klever"
+               android:adjustViewBounds="true"/>
+
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                  android:gravity="center_vertical"
+                  android:layout_centerVertical="true"
+                  android:orientation="horizontal"
+                  android:padding="@dimen/_5sdp"
+    >
+        <LinearLayout android:layout_width="0dp"
+                      android:layout_weight="2"
+                      android:layout_height="wrap_content"
+                      android:orientation="vertical"
+                      android:layout_marginLeft="@dimen/_5sdp">
+            <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+            >
+                <ImageView android:layout_width="fill_parent" android:layout_height="wrap_content"
+                           android:adjustViewBounds="true"
+                           android:src="@drawable/ic_item_klever"
+                           android:paddingLeft="@dimen/_5sdp"
+                           android:paddingRight="@dimen/_5sdp"
+                           android:id="@+id/img_title"
+                />
+
+            </RelativeLayout>
+            <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+                          android:orientation="horizontal"
+                          android:layout_gravity="center_horizontal"
+                          android:layout_marginTop="@dimen/_2sdp">
+                <ImageView android:layout_width="@dimen/_10sdp" android:layout_height="@dimen/_10sdp"
+                           app:srcCompat="@drawable/ic_point_account"
+                           android:layout_gravity="center_vertical"/>
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                          android:gravity="center"
+                          android:text="50"
+                          android:textColor="@color/background_main"
+                          android:fontFamily="@font/roboto_bold"
+                          android:textSize="@dimen/_10sdp"
+                          android:layout_centerVertical="true"
+                          android:layout_toRightOf="@+id/img_level"
+                          android:id="@+id/txt_point"
+                          android:paddingLeft="@dimen/_2sdp"
+                />
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                          android:gravity="center"
+                          android:text="@string/point"
+                          android:textColor="@color/background_main"
+                          android:fontFamily="@font/roboto_regular"
+                          android:textSize="@dimen/_10sdp"
+                          android:layout_centerVertical="true"
+                          android:layout_toRightOf="@+id/img_level"
+                          android:paddingLeft="@dimen/_2sdp"
+                />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:layout_width="0dp"
+                      android:layout_weight="8"
+                      android:layout_height="wrap_content"
+                      android:orientation="vertical"
+                      android:layout_marginRight="@dimen/_5sdp">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                      android:text="@string/send_gift"
+                      android:textColor="@color/background_main"
+                      android:fontFamily="@font/roboto_bold"
+                      android:textSize="@dimen/_8sdp"
+                      android:layout_centerVertical="true"
+                      android:background="@drawable/custom_button_rose"
+                      android:paddingTop="@dimen/_2sdp"
+                      android:paddingBottom="@dimen/_2sdp"
+                      android:paddingLeft="@dimen/_5sdp"
+                      android:paddingRight="@dimen/_5sdp"/>
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                      android:text="@string/send_gift"
+                      android:textColor="@color/text_black_333"
+                      android:fontFamily="@font/roboto_bold"
+                      android:singleLine="true"
+                      android:textSize="@dimen/_10sdp"
+                      android:layout_centerVertical="true"
+                      android:layout_marginTop="@dimen/_3sdp"
+                      android:layout_marginBottom="@dimen/_3sdp"
+            android:id="@+id/txt_title"/>
+
+            <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+            >
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                          android:text="@string/sale_date_use_"
+                          android:textColor="@color/text_gray_888"
+                          android:fontFamily="@font/roboto_light"
+                          android:textSize="@dimen/_7sdp"
+                          android:layout_centerVertical="true"
+                          android:id="@+id/txt_title_date"/>
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                          android:textColor="@color/text_gray_888"
+                          android:fontFamily="@font/roboto_light"
+                          android:textSize="@dimen/_7sdp"
+                          android:layout_centerVertical="true"
+                          android:id="@+id/txt_date"
+                          android:layout_toRightOf="@+id/txt_title_date"
+                          android:paddingLeft="@dimen/_3sdp"/>
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                          android:text="@string/convert_point"
+                          android:textColor="@color/background_main"
+                          android:fontFamily="@font/roboto_bold"
+                          android:textSize="@dimen/_9sdp"
+                          android:layout_centerVertical="true"
+                          android:layout_alignParentRight="true"
+                          android:id="@+id/txt_convert_point"/>
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView android:layout_width="@dimen/_20sdp" android:layout_height="@dimen/_20sdp"
+              android:background="@drawable/custom_dialog_gray_top_right"
+              android:layout_alignParentRight="true"
+              android:text="x2"
+              android:gravity="center"
+              android:textColor="@color/white"
+              android:fontFamily="@font/roboto_bold"
+              android:textSize="@dimen/_8sdp"
+              android:id="@+id/txt_number_bonus_card"/>
+</RelativeLayout>

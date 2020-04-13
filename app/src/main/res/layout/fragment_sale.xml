@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/white">
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                  android:background="@color/background_main"
+                  android:padding="@dimen/_15sdp"
+                  android:orientation="vertical"
+                  android:id="@+id/layout_title_list_store">
+
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+        >
+            <ImageView android:layout_width="@dimen/_20sdp" android:layout_height="@dimen/_20sdp"
+                       android:id="@+id/img_back_sale"
+                       app:srcCompat="@drawable/ic_back"
+                       android:padding="@dimen/_3sdp"
+                       android:layout_centerVertical="true"/>
+
+            <ImageView android:layout_width="@dimen/_20sdp" android:layout_height="@dimen/_20sdp"
+                       android:id="@+id/img_show_navigation_sale"
+                       app:srcCompat="@drawable/ic_show_navigation"
+                       android:padding="@dimen/_3sdp"
+                       android:layout_toRightOf="@+id/img_back_sale"
+                       android:layout_centerVertical="true"/>
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                      android:gravity="center"
+                      android:text="@string/sale"
+                      android:textColor="@color/white"
+                      android:fontFamily="@font/roboto_regular"
+                      android:textSize="@dimen/_16sdp"
+                      android:id="@+id/txt_title"/>
+        </RelativeLayout>
+
+    </LinearLayout>
+    <LinearLayout android:layout_width="match_parent" android:layout_height="@dimen/_45sdp"
+                  android:orientation="horizontal">
+        <RelativeLayout android:layout_width="0dp"
+                        android:layout_weight="1" android:layout_height="match_parent"
+                        android:id="@+id/layout_happenning"
+                        android:background="@drawable/custom_border_bottom_violet"
+                        android:paddingTop="@dimen/_10sdp"
+                        android:paddingBottom="@dimen/_10sdp"
+                        android:paddingLeft="@dimen/_15sdp"
+                        android:paddingRight="@dimen/_15sdp">
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                      android:gravity="center"
+                      android:text="@string/happenning"
+                      android:textColor="@color/text_black_333"
+                      android:fontFamily="@font/roboto_regular"
+                      android:textSize="@dimen/_12sdp"
+                      android:layout_centerInParent="true"
+                      android:id="@+id/txt_happenning"
+            />
+        </RelativeLayout>
+        <RelativeLayout android:layout_width="0dp"
+                        android:layout_weight="1" android:layout_height="match_parent"
+                        android:id="@+id/layout_upcoming"
+                        android:background="@drawable/custom_border_bottom_white"
+                        android:paddingTop="@dimen/_10sdp"
+                        android:paddingBottom="@dimen/_10sdp"
+                        android:paddingLeft="@dimen/_15sdp"
+                        android:paddingRight="@dimen/_15sdp">
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                      android:gravity="center"
+                      android:text="@string/upcoming"
+                      android:textColor="@color/text_black_333"
+                      android:fontFamily="@font/roboto_regular"
+                      android:textSize="@dimen/_12sdp"
+                      android:layout_centerInParent="true"
+                      android:id="@+id/txt_upcoming"
+            />
+        </RelativeLayout>
+        <RelativeLayout android:layout_width="0dp"
+                        android:layout_weight="1" android:layout_height="match_parent"
+                        android:id="@+id/layout_happenned"
+                        android:background="@drawable/custom_border_bottom_white"
+                        android:paddingTop="@dimen/_10sdp"
+                        android:paddingBottom="@dimen/_10sdp"
+                        android:paddingLeft="@dimen/_15sdp"
+                        android:paddingRight="@dimen/_15sdp">
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                      android:gravity="center"
+                      android:text="@string/happenned"
+                      android:textColor="@color/text_black_333"
+                      android:fontFamily="@font/roboto_regular"
+                      android:textSize="@dimen/_12sdp"
+                      android:layout_centerInParent="true"
+                      android:id="@+id/txt_happenned"
+            />
+        </RelativeLayout>
+    </LinearLayout>
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent"
+    >
+        <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/ryv_sale"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                android:padding="@dimen/_10sdp"/>
+
+        <ProgressBar
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="@dimen/_130sdp"
+                android:minHeight="50dp"
+                android:minWidth="50dp"
+                android:id="@+id/prg_sale"
+                android:visibility="gone"
+                android:layout_centerInParent="true"
+                android:background="@color/trans_black_80"
+                android:clickable="true"/>
+    </RelativeLayout>
+</LinearLayout>

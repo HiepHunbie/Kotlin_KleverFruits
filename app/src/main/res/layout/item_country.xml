@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_height="match_parent"
+                android:padding="5dp"
+                style="?android:attr/spinnerDropDownItemStyle"
+                android:layout_width="match_parent"
+                android:ellipsize="marquee" android:singleLine="true">
+
+    <!--<RadioButton android:layout_width="wrap_content" android:layout_height="wrap_content"-->
+                 <!--android:id="@+id/chk_dropdown_account"-->
+                 <!--android:textSize="@dimen/_14sdp"-->
+                 <!--android:textColor="@color/backgroundLogin"-->
+                 <!--android:theme="@style/CheckboxFilterDevice"-->
+                 <!--android:layout_centerVertical="true"-->
+                 <!--android:checked="false"-->
+    <!--/>-->
+    <ImageView
+            android:layout_width="25.5dp"
+            android:layout_height="15dp"
+            android:id="@+id/intl_phone_edit__country__item_image"
+            android:src="@drawable/country_il"
+            android:contentDescription="@string/item_image_contentDescription"
+            android:layout_centerVertical="true"
+    android:layout_toRightOf="@+id/chk_dropdown_account"/>
+
+    <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+    android:orientation="horizontal"
+                 android:layoutDirection="rtl"
+                  android:layout_centerVertical="true"
+                  android:layout_toRightOf="@+id/intl_phone_edit__country__item_image"
+                  android:layout_marginLeft="@dimen/_5sdp"
+    >
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/intl_phone_edit__country__item_dialcode"
+                android:textColor="?android:textColorHint"
+                android:text="@string/item_preview_dialCode"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/_5sdp"
+        />
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/intl_phone_edit__country__item_name"
+                android:text=""
+                android:textColor="@color/edittext_login_color"
+
+        />
+
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_5sdp"
+                android:background="@drawable/custom_dialog_gray"
+              android:id="@+id/layout_view"
+>
+
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView android:layout_width="match_parent" android:layout_height="wrap_content"
+                   android:adjustViewBounds="true"
+                   android:src="@drawable/ic_back_momo"
+                   android:id="@+id/img_back"/>
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/img_back"
+        android:layout_marginTop="-40dp"
+        android:layout_marginLeft="10dp">
+            <ImageView android:layout_width="@dimen/_25sdp" android:layout_height="@dimen/_25sdp"
+            android:id="@+id/img_small_back"
+            android:src="@drawable/ic_momo"
+            android:layout_gravity="center_vertical"/>
+
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                      android:text="Ví điện tử Momo"
+                      android:textColor="@color/white"
+                      android:fontFamily="@font/roboto_bold"
+                      android:singleLine="true"
+                      android:textSize="@dimen/_12sdp"
+                      android:layout_centerVertical="true"
+                      android:layout_marginLeft="@dimen/_3sdp"
+            android:layout_gravity="center_vertical"
+            android:id="@+id/txt_name_partner"/>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="@dimen/_10sdp">
+        <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content"
+        android:layout_weight="7.4"
+        android:orientation="vertical"
+                      android:layout_gravity="center_vertical"
+        >
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                      android:text="Ví điện tử Momo"
+                      android:textColor="@color/text_black_333"
+                      android:fontFamily="@font/roboto_bold"
+                      android:singleLine="true"
+                      android:textSize="@dimen/_12sdp"
+                      android:layout_centerVertical="true"
+                      android:layout_marginLeft="@dimen/_3sdp"
+                      android:layout_gravity="center_vertical"
+            android:id="@+id/txt_sale_title"/>
+            <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+                          android:orientation="horizontal"
+                          android:layout_marginTop="@dimen/_2sdp">
+                <ImageView android:layout_width="@dimen/_10sdp" android:layout_height="@dimen/_10sdp"
+                           app:srcCompat="@drawable/ic_point_account"
+                           android:layout_gravity="center_vertical"/>
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                          android:gravity="center"
+                          android:text="50"
+                          android:textColor="@color/background_main"
+                          android:fontFamily="@font/roboto_bold"
+                          android:textSize="@dimen/_10sdp"
+                          android:layout_centerVertical="true"
+                          android:layout_toRightOf="@+id/img_level"
+                          android:id="@+id/txt_point"
+                          android:paddingLeft="@dimen/_2sdp"
+                />
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                          android:gravity="center"
+                          android:text="@string/point"
+                          android:textColor="@color/background_main"
+                          android:fontFamily="@font/roboto_regular"
+                          android:textSize="@dimen/_10sdp"
+                          android:layout_centerVertical="true"
+                          android:layout_toRightOf="@+id/img_level"
+                          android:paddingLeft="@dimen/_2sdp"
+                />
+            </LinearLayout>
+        </LinearLayout>
+        <TextView android:layout_width="0dp"
+                  android:layout_weight="2.6" android:layout_height="wrap_content"
+        android:background="@drawable/custom_dialog_white_black"
+        android:paddingTop="@dimen/_10sdp"
+        android:paddingBottom="@dimen/_10sdp"
+                  android:layout_gravity="center_vertical"
+                  android:text="@string/convert_point"
+                  android:fontFamily="@font/roboto_bold"
+                  android:textColor="@color/text_black_333"
+                  android:gravity="center"
+                  android:layout_marginLeft="@dimen/_5sdp"
+                  android:id="@+id/txt_convert_point"
+        />
+    </LinearLayout>
+
+</LinearLayout>

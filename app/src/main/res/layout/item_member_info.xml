@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="horizontal"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+android:layout_marginBottom="@dimen/_10sdp">
+
+    <ImageView android:layout_width="@dimen/_20sdp" android:layout_height="@dimen/_20sdp"
+    android:src="@drawable/ic_violet_member"
+    android:id="@+id/img_avatar"/>
+
+    <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+              android:text="@string/check_more"
+              android:textColor="@color/text_gray_666"
+              android:fontFamily="@font/roboto_regular"
+              android:layout_marginLeft="@dimen/_5sdp"
+              android:textSize="@dimen/_10sdp"
+              android:layout_gravity="center_vertical"
+              android:gravity="center_vertical"
+    android:id="@+id/txt_value"/>
+
+</LinearLayout>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/custom_border_shadow"
+                android:id="@+id/layout_item"
+android:layout_marginBottom="@dimen/_5sdp">
+
+
+    <ImageView android:layout_width="match_parent" android:layout_height="@dimen/_150sdp"
+               android:src="@drawable/ic_demo_fruits"
+               android:adjustViewBounds="true"
+               android:scaleType="centerCrop"
+               android:id="@+id/img_product"
+               android:layout_below="@+id/layout_top"
+    />
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:layout_below="@+id/img_product"
+                  android:orientation="vertical"
+                    android:padding="@dimen/_10sdp">
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                  android:layout_gravity="center_vertical"
+                  android:id="@+id/txt_name"
+                  android:text="AAAAA"
+                  android:textColor="@color/text_black_333"
+                  android:textSize="@dimen/_12sdp"
+                  android:fontFamily="@font/roboto_regular"
+                  android:layout_centerVertical="true"/>
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/_3sdp">
+            <ImageView android:layout_width="@dimen/_10sdp" android:layout_height="@dimen/_10sdp"
+            app:srcCompat = "@drawable/ic_calendar"/>
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                      android:layout_gravity="center_vertical"
+                      android:id="@+id/txt_date"
+                      android:text="AAAAA"
+                      android:textColor="@color/text_gray_666"
+                      android:textSize="@dimen/_9sdp"
+                      android:fontFamily="@font/roboto_regular"
+                      android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/_3sdp"
+            android:maxLines="2"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <ProgressBar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/_30sdp"
+            android:minHeight="50dp"
+            android:minWidth="50dp"
+            android:id="@+id/prg_new_fruits"
+            android:visibility="gone"
+            android:layout_centerInParent="true"
+            android:clickable="true"/>
+</RelativeLayout>

@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools" android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="@dimen/_12sdp"
+            android:background="@color/white">
+
+    <LinearLayout android:layout_width="match_parent" android:layout_height="match_parent"
+                  android:orientation="vertical">
+
+        <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/_200sdp"
+                android:background="@color/white"
+                android:layout_marginBottom="@dimen/_10sdp"
+        >
+
+
+            <androidx.viewpager.widget.ViewPager
+                    android:id="@+id/pager_product_detail"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_alignParentTop="true" />
+
+            <com.viewpagerindicator.CirclePageIndicator
+                    android:id="@+id/indicator_product_detail"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="bottom"
+                    android:padding="10dip"
+                    app:centered="true"
+                    app:fillColor="@color/background_main"
+                    app:pageColor="#fff"
+                    app:snap="false" />
+
+            <ImageView android:layout_width="@dimen/_20sdp" android:layout_height="@dimen/_20sdp"
+                       app:srcCompat = "@drawable/ic_back"
+                       android:tint="@color/text_black_333"
+                       android:id="@+id/txt_back"
+                       android:paddingTop="@dimen/_3sdp"
+                       android:paddingBottom="@dimen/_3sdp"
+                       android:scaleType="fitStart"/>
+        </RelativeLayout>
+
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                  android:id="@+id/txt_name"
+                  android:text="AAAA"
+                  android:textSize="@dimen/_16sdp"
+                  android:fontFamily="@font/roboto_regular"
+                  android:textColor="@color/background_main"
+                  android:layout_marginBottom="@dimen/_10sdp"/>
+
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                      android:orientation="horizontal"
+                      android:layout_marginBottom="@dimen/_6sdp">
+            <TextView android:layout_width="0dp" android:layout_height="wrap_content"
+                      android:layout_weight="3"
+                      android:text="@string/product_code"
+                      android:textColor="@color/text_black_333"
+                      android:textSize="@dimen/_11sdp"
+                      android:fontFamily="@font/roboto_regular"/>
+
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                      android:text=":"
+                      android:textSize="@dimen/_11sdp"
+                      android:fontFamily="@font/roboto_regular"/>
+            <TextView android:layout_width="0dp" android:layout_height="wrap_content"
+                      android:layout_weight="7"
+                      android:text=""
+                      android:textColor="@color/text_black_333"
+                      android:textSize="@dimen/_11sdp"
+                      android:fontFamily="@font/roboto_light"
+                      android:id="@+id/txt_product_code"
+                      android:paddingLeft="@dimen/_10sdp"/>
+        </LinearLayout>
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                      android:orientation="horizontal"
+                      android:layout_marginBottom="@dimen/_6sdp">
+            <TextView android:layout_width="0dp" android:layout_height="wrap_content"
+                      android:layout_weight="3"
+                      android:text="@string/from"
+                      android:textColor="@color/text_black_333"
+                      android:textSize="@dimen/_11sdp"
+                      android:fontFamily="@font/roboto_regular"/>
+
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                      android:text=":"
+                      android:textSize="@dimen/_11sdp"
+                      android:fontFamily="@font/roboto_regular"/>
+            <TextView android:layout_width="0dp" android:layout_height="wrap_content"
+                      android:layout_weight="7"
+                      android:text=""
+                      android:textColor="@color/text_black_333"
+                      android:textSize="@dimen/_11sdp"
+                      android:fontFamily="@font/roboto_light"
+                      android:id="@+id/txt_product_from"
+                      android:paddingLeft="@dimen/_10sdp"/>
+        </LinearLayout>
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                      android:orientation="horizontal"
+                      android:layout_marginBottom="@dimen/_6sdp">
+            <TextView android:layout_width="0dp" android:layout_height="wrap_content"
+                      android:layout_weight="3"
+                      android:text="@string/status"
+                      android:textColor="@color/text_black_333"
+                      android:textSize="@dimen/_11sdp"
+                      android:fontFamily="@font/roboto_regular"/>
+
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                      android:text=":"
+                      android:textSize="@dimen/_11sdp"
+                      android:fontFamily="@font/roboto_regular"/>
+            <TextView android:layout_width="0dp" android:layout_height="wrap_content"
+                      android:layout_weight="7"
+                      android:text=""
+                      android:textColor="@color/text_black_333"
+                      android:textSize="@dimen/_11sdp"
+                      android:fontFamily="@font/roboto_light"
+                      android:id="@+id/txt_product_status"
+                      android:paddingLeft="@dimen/_10sdp"/>
+        </LinearLayout>
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                      android:orientation="horizontal"
+                      android:layout_marginBottom="@dimen/_6sdp">
+            <TextView android:layout_width="0dp" android:layout_height="wrap_content"
+                      android:layout_weight="3"
+                      android:text="@string/unit"
+                      android:textColor="@color/text_black_333"
+                      android:textSize="@dimen/_11sdp"
+                      android:fontFamily="@font/roboto_regular"/>
+
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                      android:text=":"
+                      android:textSize="@dimen/_11sdp"
+                      android:fontFamily="@font/roboto_regular"/>
+            <TextView android:layout_width="0dp" android:layout_height="wrap_content"
+                      android:layout_weight="7"
+                      android:text=""
+                      android:textColor="@color/text_black_333"
+                      android:textSize="@dimen/_11sdp"
+                      android:fontFamily="@font/roboto_light"
+                      android:id="@+id/txt_product_unit"
+                      android:paddingLeft="@dimen/_10sdp"/>
+        </LinearLayout>
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                      android:orientation="horizontal"
+                      android:layout_marginBottom="@dimen/_6sdp">
+            <TextView android:layout_width="0dp" android:layout_height="wrap_content"
+                      android:layout_weight="3"
+                      android:text="@string/count"
+                      android:textColor="@color/text_black_333"
+                      android:textSize="@dimen/_11sdp"
+                      android:fontFamily="@font/roboto_regular"/>
+
+        </LinearLayout>
+
+        <LinearLayout android:layout_width="@dimen/_105sdp" android:layout_height="@dimen/_35sdp"
+                      android:orientation="horizontal"
+                      android:background="@drawable/custom_dialog_white_count"
+                      android:padding="1dp"
+                      android:layout_marginTop="@dimen/_5sdp">
+
+            <ImageView android:layout_width="0dp" android:layout_height="@dimen/_35sdp"
+                       android:layout_weight="1"
+                       app:srcCompat = "@drawable/ic_minus"
+                       android:id="@+id/img_minus"
+                       android:padding="@dimen/_10sdp"/>
+            <View android:layout_width="1dp" android:layout_height="match_parent"
+                  android:background="@color/gray"/>
+
+            <TextView android:layout_width="0dp" android:layout_height="match_parent"
+                      android:layout_weight="1"
+                      android:id="@+id/txt_number"
+                      android:text="1"
+                      android:gravity="center"
+                      android:textSize="@dimen/_14sdp"
+                      android:textColor="@color/text_black_333"
+                      android:fontFamily="@font/roboto_regular"/>
+            <View android:layout_width="1dp" android:layout_height="match_parent"
+                  android:background="@color/gray"/>
+            <ImageView android:layout_width="0dp" android:layout_height="@dimen/_35sdp"
+                       android:layout_weight="1"
+                       app:srcCompat = "@drawable/ic_add"
+                       android:id="@+id/img_add"
+                       android:padding="@dimen/_10sdp"/>
+
+        </LinearLayout>
+
+        <LinearLayout android:layout_width="match_parent" android:layout_height="match_parent"
+                      android:orientation="horizontal"
+                      android:layout_marginTop="@dimen/_10sdp"
+                      android:layout_marginBottom="@dimen/_15sdp">
+            <TextView android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_gravity="bottom"
+                      android:id="@+id/txt_sale_cost"
+                      android:text="999.000"
+                      android:textColor="@color/background_main"
+                      android:textSize="@dimen/_15sdp"
+                      android:fontFamily="@font/roboto_bold"
+                      android:gravity="right"
+                      android:paddingRight="@dimen/_2sdp"/>
+            <TextView android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_gravity="bottom"
+                      android:id="@+id/txt_real_cost"
+                      android:text="1.200.000"
+                      android:textColor="@color/text_gray"
+                      android:textSize="@dimen/_11sdp"
+                      android:fontFamily="@font/roboto_regular"
+                      android:paddingLeft="@dimen/_10sdp"/>
+        </LinearLayout>
+
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                      android:padding="@dimen/_10sdp"
+                      android:background="@drawable/custom_button_violet_rose"
+                      android:orientation="horizontal">
+            <ImageView android:layout_width="@dimen/_20sdp" android:layout_height="@dimen/_20sdp"
+                       app:srcCompat = "@drawable/ic_frame"/>
+
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                          android:orientation="vertical"
+                          android:paddingLeft="@dimen/_6sdp">
+
+                <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                          android:text="@string/please_check_address"
+                          android:textSize="@dimen/_9sdp"
+                          android:textColor="@color/text_black_333"
+                          android:fontFamily="@font/roboto_regular"/>
+                <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                          android:text="@string/add_address"
+                          android:textSize="@dimen/_9sdp"
+                          android:textColor="@color/background_main"
+                          android:fontFamily="@font/roboto_regular"
+                          android:id="@+id/txt_add_addres"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout android:layout_width="match_parent" android:layout_height="@dimen/_40sdp"
+                      android:orientation="horizontal"
+                      android:layout_marginTop="@dimen/_20sdp">
+
+            <LinearLayout android:layout_width="wrap_content" android:layout_height="match_parent"
+                          android:orientation="vertical"
+                          android:id="@+id/layout_chat">
+                <ImageView android:layout_width="wrap_content" android:layout_height="0dp"
+                           android:layout_weight="1"
+                           android:src="@drawable/ic_chat"
+                           android:padding="@dimen/_3sdp"
+                           android:layout_gravity="center_horizontal"/>
+                <TextView android:layout_width="wrap_content" android:layout_height="0dp"
+                          android:layout_weight="1"
+                          android:text="@string/chat_now"
+                          android:textColor="@color/button_main_hide"
+                          android:textSize="@dimen/_9sdp"
+                          android:layout_gravity="center_horizontal"/>
+            </LinearLayout>
+
+            <View android:layout_width="1dp" android:layout_height="@dimen/_15sdp"
+                  android:background="@color/view_line_gray"
+                  android:layout_gravity="center_vertical"
+                  android:layout_marginLeft="@dimen/_10sdp"
+                  android:layout_marginRight="@dimen/_10sdp"/>
+            <LinearLayout android:layout_width="wrap_content" android:layout_height="match_parent"
+                          android:orientation="vertical"
+                          android:id="@+id/layout_add_to_Cart">
+                <ImageView android:layout_width="wrap_content" android:layout_height="0dp"
+                           android:layout_weight="1"
+                           app:srcCompat="@drawable/ic_cart"
+                           android:padding="@dimen/_3sdp"
+                           android:layout_gravity="center_horizontal"/>
+                <TextView android:layout_width="wrap_content" android:layout_height="0dp"
+                          android:layout_weight="1"
+                          android:text="@string/add_to_cart"
+                          android:textColor="@color/button_main_hide"
+                          android:textSize="@dimen/_9sdp"
+                          android:layout_gravity="center_horizontal"/>
+            </LinearLayout>
+
+            <TextView android:layout_width="match_parent" android:layout_height="match_parent"
+                      android:background="@drawable/custom_dialog_violet"
+                      android:layout_marginLeft="@dimen/_10sdp"
+                      android:id="@+id/txt_buy_now"
+                      android:text="@string/buy_now_big"
+                      android:textColor="@color/white"
+                      android:textSize="@dimen/_12sdp"
+                      android:fontFamily="@font/roboto_regular"
+                      android:gravity="center"/>
+        </LinearLayout>
+
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                  android:text="@string/detail_info"
+                  android:textSize="@dimen/_16sdp"
+                  android:fontFamily="@font/roboto_regular"
+                  android:textColor="@color/text_black_333"
+                  android:layout_marginBottom="@dimen/_10sdp"
+                  android:layout_marginTop="@dimen/_20sdp"/>
+
+        <WebView android:layout_width="match_parent" android:layout_height="wrap_content"
+                 android:layout_marginTop="@dimen/_10sdp"
+                 android:id="@+id/webview_detail"
+                 tools:ignore="MissingConstraints"
+                 tools:layout_editor_absoluteX="8dp"
+                 tools:layout_editor_absoluteY="8dp" ></WebView>
+    </LinearLayout>
+</ScrollView>
